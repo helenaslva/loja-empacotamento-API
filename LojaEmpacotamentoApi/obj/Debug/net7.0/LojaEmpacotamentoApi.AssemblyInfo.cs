@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LojaEmpacotamentoApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a12d1342ed438dee49e5c3a70c42d96e8a0365a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6b991d39b471499c07432a46c4c87b646d3966d")]
 [assembly: System.Reflection.AssemblyProductAttribute("LojaEmpacotamentoApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LojaEmpacotamentoApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
