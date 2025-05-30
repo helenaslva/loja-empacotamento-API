@@ -59,9 +59,19 @@ namespace LojaEmpacotamentoApi.Handler.Pedidos
                     DataPedido = model.DataPedido,
                     Status = model.Status
                 };
+                try
+                {
+                    await _pedidoRepository.SalvarPedido(pedido, pedidoProdutos, caixasEmpacotadas);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Erro ao salvar pedido:");
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(ex.InnerException?.Message);
+                    throw; // repropaga o erro se quiser manter o fluxo
+                }
 
-
-                await _pedidoRepository.SalvarPedido(pedido, pedidoProdutos, caixasEmpacotadas);
+                
 
         
                 var resultado = new SalvarPedidoResult
