@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Docker (.NET Core)",
+      "type": "coreclr",
+      "request": "attach",
+      "processId": "${command:pickRemoteProcess}",
+      "pipeTransport": {
+        "pipeProgram": "docker",
+        "pipeArgs": [
+          "exec",
+          "-i",
+          "microservico-loja-empacotamento-api"
+        ],
+        "debuggerPath": "/vsdbg/vsdbg",
+        "quoteArgs": false
+      },
+      "sourceFileMap": {
+        "/app": "${workspaceFolder}"
+      }
+    }
+  ]
+}

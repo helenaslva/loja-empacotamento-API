@@ -1,0 +1,7 @@
+{
+  "configProperties": {
+    "Switch.Microsoft.Data.SqlClient.DisableConnectionPoolPerformanceCounters": true,
+    "Switch.Microsoft.Data.SqlClient.UseLegacyExtendedTypes": false,
+    "Switch.Microsoft.Data.SqlClient.DisableLogging": true
+  }
+}
